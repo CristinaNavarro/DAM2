@@ -1,0 +1,6 @@
+C:\Users\Cristi\source\repos\PracticaInicial\PracticaInicial\obj\Debug\PrácticaInicial.csproj.CoreCompileInputs.cache
+C:\Users\Cristi\source\repos\PracticaInicial\PracticaInicial\obj\Debug\PracticaInicial.exe
+C:\Users\Cristi\source\repos\PracticaInicial\PracticaInicial\obj\Debug\PracticaInicial.pdb
+C:\Users\Cristi\source\repos\PracticaInicial\PracticaInicial\bin\Debug\PracticaInicial.exe.config
+C:\Users\Cristi\source\repos\PracticaInicial\PracticaInicial\bin\Debug\PracticaInicial.exe
+C:\Users\Cristi\source\repos\PracticaInicial\PracticaInicial\bin\Debug\PracticaInicial.pdb
