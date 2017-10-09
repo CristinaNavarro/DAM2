@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.cristi.ascensor.MainActivity">
+
+    <GridLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:columnCount="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/linearEstructura"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tvPiso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8px"
+            android:text="@string/tvPiso" />
+
+        <TextView
+            android:id="@+id/tvMostrarPiso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8px"
+            android:text="@string/tvMostrarPiso" />
+
+        <TextView
+            android:id="@+id/tvDireccion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tvDireccion"
+            android:layout_margin="8px"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.616"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.085" />
+
+        <TextView
+            android:id="@+id/tvMostrarDireccion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8px"
+            android:text="@string/tvMostrarDireccion"
+            tools:layout_editor_absoluteX="190dp"
+            tools:layout_editor_absoluteY="90dp" />
+    </GridLayout>
+
+    <LinearLayout
+        android:id="@+id/linearEstructura"
+        android:layout_width="138dp"
+        android:layout_height="495dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <Button
+            android:id="@+id/bPlanta4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/bPlanta4" />
+
+        <Button
+            android:id="@+id/bPlanta3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/bPlanta3" />
+
+        <Button
+            android:id="@+id/bPlanta2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/bPlanta2" />
+
+        <Button
+            android:id="@+id/bPlanta1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/bPlanta1" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
