@@ -13,54 +13,164 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PracticaInicial{
+namespace PracticaInicial {
 
-    class Principal{
+    class Principal {
 
         public static void Main(string[] args) {
 
-            UInt16 uiModoSeleccionado;	
-						//Este do while se repetirá mientras el usuario no seleccione la tercera opción del menú
-						do{
-								try{
-										//Se introduce por teclado el modo deseado
-										Console.Write("Seleccione uno de los modos: 1. Ecuacion 2. Tabla 3. Salir");
-										uiModoSeleccionado = Convert.ToUInt16(Console.ReadLine());
-										//Mediante un switch se crea una instancia de Ecuacion, de Tabla o se finaliza el programa
-										switch (uiModoSeleccionado) {
-												case 1:
-														//Se piden 3 números y se crea el objeto ecuación y se llama a su método
-														Console.Write("Introduzca el primer numero");
-														Single sinCoeficienteX = Convert.ToSingle(Console.ReadLine());
-														Console.Write("Introduzca el segundo numero");
-														Single sinCoeficienteY = Convert.ToSingle(Console.ReadLine());
-														Console.Write("Introduzca el tercer numero");
-														Single sinCoeficienteZ = Convert.ToSingle(Console.ReadLine());
-														Ecuacion ecuacion = new Ecuacion(sinCoeficienteX, sinCoeficienteY, sinCoeficienteZ);
-														ecuacion.HallarResultado();
-														break;
-												case 2:
-														//Se introducen los datos por consola y se crea el objeto tabla, llamando después a su método
-														Console.Write("Introduce el factor:");
-														UInt16 uiFactor = Convert.ToUInt16(Console.ReadLine());
-														Console.Write("Introduce el numero de elementos: ");
-														UInt16 uiNumeroElementos = Convert.ToUInt16(Console.ReadLine());
-														Tabla tabla = new Tabla(uiFactor, uiNumeroElementos);
-														tabla.ImprimirTabla();
-														break;
-												default:
-														if(uiModoSeleccionado!=3)
-														Console.WriteLine("No ha introducido un numero correcto");
-														break;
-										}
-								} catch(System.OverflowException) {
-										uiModoSeleccionado = 0;
-										Console.WriteLine("No se ha introducido un numero correcto");
-								}catch(FormatException) {
-										uiModoSeleccionado  = 0;
-										Console.WriteLine("No se ha introducido un numero");
-								}  
-						}while(uiModoSeleccionado!=3);
+						#region DeclaraciónDeVariables
+            ushort usModoSeleccionado = 0;
+						float floCoeficienteX = 0;
+						float floCoeficienteY = 0;
+						float floCoeficienteZ = 0;
+						Ecuacion ecuacion;
+						ushort usFactor = 0;
+						ushort usNumeroElementos = 0;
+						Tabla tabla;
+            string strCadena;
+            bool boolValido = false;
+						#endregion
+
+						do {
+                do {
+										Console.Write("Seleccione una opción: \n \n \t 1. Ecuación \n \t 2. Tabla \n \t 3. Salir \n \n \t ->");
+                    strCadena = Console.ReadLine();
+                    boolValido = esNumeroValido(strCadena, "UInt16");
+                    if(boolValido) {
+                        usModoSeleccionado = Convert.ToUInt16(strCadena);
+                    } else {
+                        strCadena = "";
+                    }
+                } while(!boolValido || (usModoSeleccionado > 4 && usModoSeleccionado < 0));
+
+								switch(usModoSeleccionado) {
+
+										case 1:
+												Console.Clear();
+												Console.Write("Ecuación de segundo grado: \n \n");
+
+                        do {
+                            Console.Write("\t Introduzca el primer parámetro \n \t ->");
+                            strCadena = Console.ReadLine();
+                            boolValido = esNumeroValido(strCadena,"Single","Ecuación de segundo grado: \n \n");
+                            if(boolValido) {
+                              floCoeficienteX = Convert.ToSingle(strCadena);
+                            } else {
+                                strCadena = "";
+                            }
+                        } while(!boolValido);
+
+                        do {
+                        Console.Write("\t Introduzca el segundo parámetro \n \t ->");
+												strCadena = Console.ReadLine();
+                        boolValido = esNumeroValido(strCadena,"Single","Ecuación de segundo grado: \n \n\t El primer parámetro es " +floCoeficienteX +"\n");
+                            if(boolValido) {
+                              floCoeficienteY = Convert.ToSingle(strCadena);
+                            } else {
+                                strCadena = "";
+                            }
+                        } while(!boolValido);
+
+                        do {
+                        Console.Write("\t Introduzca el tercer parámetro \n \t ->");
+                        strCadena = Console.ReadLine();
+                        boolValido = esNumeroValido(strCadena,"Single","Ecuación de segundo grado: \n \n\t El primer parámetro es " +floCoeficienteX +" y el segundo es " +floCoeficienteY +"\n");
+                            if(boolValido) { 
+                              floCoeficienteZ = Convert.ToSingle(strCadena);
+                            } else {
+                                strCadena = "";
+                            }
+                        } while(!boolValido);
+
+												ecuacion = new Ecuacion(floCoeficienteX, floCoeficienteY, floCoeficienteZ);
+												ecuacion.HallarResultado();
+												break;
+
+										case 2:
+												Console.Clear();
+												Console.Write("Tabla de multiplicar: \n \n");
+
+                        do {
+												    Console.Write("\t Introduce el factor: \n \t ->");
+                            strCadena = Console.ReadLine();
+                            boolValido = esNumeroValido(strCadena,"UInt16","Tabla de multiplicar: \n \n");
+                            if(boolValido) {
+                                usFactor = Convert.ToUInt16(strCadena);
+                            } else {
+                               strCadena = "";
+                            }
+                        } while(!boolValido);
+
+                        do {
+												    Console.Write("\t Introduce el número de elementos: \n \t ->");
+                            strCadena = Console.ReadLine();
+                            boolValido = esNumeroValido(strCadena,"UInt16","Tabla de multiplicar: \n \n \t El factor es: " +usFactor +"\n");
+                            if(boolValido) {
+                                usNumeroElementos = Convert.ToUInt16(strCadena);
+                            } else {
+                               strCadena = "";
+                            }
+                        } while(!boolValido);
+
+												tabla = new Tabla(usFactor, usNumeroElementos);
+												tabla.ImprimirTabla();
+											  break;
+
+										case 3:
+												break;
+
+										default:
+												ImprimirAlerta("ALERTA: Acaba de introducir un número que no es correcto. Recuerde introducir un número entre 1 y 3");
+												break;
+								}
+				    } while(usModoSeleccionado!=3);
+
         }
+		#region MétodosComprobación
+
+				public static void ImprimirAlerta(string alerta) { 
+						Console.Clear();
+						Console.BackgroundColor = ConsoleColor.Red;
+						Console.WriteLine(alerta +" \n");
+						Console.ResetColor();
+				}
+
+        public static bool esNumeroValido(string strNumero, string strTipo) {
+            try {
+                if(strTipo.Equals("Single")) {
+                  float floComprobar = Convert.ToSingle(strNumero);
+                } else {
+                  ushort floComprobar = Convert.ToUInt16(strNumero);
+                }
+
+            } catch(OverflowException) {
+							  ImprimirAlerta("ALERTA: Acaba de introducir un número que no es correcto.");
+					      return false;
+            } catch(FormatException) {
+							  ImprimirAlerta("ALERTA: Acaba de introducir unos caracteres no numéricos.");
+					      return false;
+            }
+            return true;
+        }
+        public static bool esNumeroValido(string strNumero, string strTipo, string enunciadoAnterior) {
+            try {
+                if(strTipo=="Single") {
+                  float floComprobar = Convert.ToSingle(strNumero);
+                } else {
+                  ushort floComprobar = Convert.ToUInt16(strNumero);
+                }
+            } catch(OverflowException) {
+							  ImprimirAlerta("ALERTA: Acaba de introducir un número que no es correcto.");
+                Console.Write(enunciadoAnterior);
+					      return false;
+            } catch(FormatException) {
+							  ImprimirAlerta("ALERTA: Acaba de introducir unos caracteres no numéricos.");
+                Console.Write(enunciadoAnterior);
+					      return false;
+            }
+            return true;
+        }
+        #endregion
     }
 }

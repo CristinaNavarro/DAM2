@@ -17,40 +17,49 @@ namespace PracticaInicial{
     class Ecuacion{
 
 				#region Atributos
-        //Atributos
-        Single sinCoeficienteX;
-        Single sinCoeficienteY;
-        Single sinCoeficienteZ;
+        float floCoeficienteX;
+        float floCoeficienteY;
+        float floCoeficienteZ;
+				
 				#endregion
 
         #region Constructor
-        public Ecuacion(Single sinCoeficienteX, Single sinCoeficienteY, Single sinCoeficienteZ) {
-            this.sinCoeficienteX = sinCoeficienteX;
-            this.sinCoeficienteY = sinCoeficienteY;
-            this.sinCoeficienteZ = sinCoeficienteZ;
+        public Ecuacion(float floCoeficienteX, float floCoeficienteY, float floCoeficienteZ) {
+            this.floCoeficienteX = floCoeficienteX;
+            this.floCoeficienteY = floCoeficienteY;
+            this.floCoeficienteZ = floCoeficienteZ;
         }
 				#endregion
 
         #region Métodos
-        //HallarResultado halla el resultado de la ecuación cuadrática de los números introducidos por teclado
         public void HallarResultado() {
-            
-								Single sinControlImaginario = (Single) Math.Pow(this.sinCoeficienteY, 2) - 4 * this.sinCoeficienteX * this.sinCoeficienteZ;
-								if(sinControlImaginario<0){
-									sinControlImaginario*=-1;
-									Single sinDiscriminante = Convert.ToSingle(Math.Sqrt(sinControlImaginario));
-									Single sinResultadoSumando = (-this.sinCoeficienteY + sinDiscriminante)/(2*this.sinCoeficienteX);
-									Single sinResultadoRestando = (-this.sinCoeficienteY - sinDiscriminante)/(2*this.sinCoeficienteX);
-									Console.Write("Los resultados son " + sinResultadoRestando + "*i y " + sinResultadoSumando +"*i, siendo i el número imaginario");
-								}else{
-									Single sinDiscriminante = Convert.ToSingle(Math.Sqrt(sinControlImaginario));
-									Single sinResultadoSumando = (-this.sinCoeficienteY + sinDiscriminante)/(2*this.sinCoeficienteX);
-									Single sinResultadoRestando = (-this.sinCoeficienteY - sinDiscriminante)/(2*this.sinCoeficienteX);
-									Console.Write("Los resultados son " + sinResultadoRestando + " y " + sinResultadoSumando);
-								}
-            
-				}
+            float floDiscriminante;
+				    float floResultadoSumando;
+				    float floResultadoRestando;
+				    float floControlImaginario;
+				    string strFinalOperacion;
 
+						floControlImaginario = (float) Math.Pow(this.floCoeficienteY, 2) - (4 * this.floCoeficienteX * this.floCoeficienteZ);
+						if(floControlImaginario < 0) {
+								floControlImaginario*=-1;
+								floDiscriminante = Convert.ToSingle(Math.Sqrt(floControlImaginario));
+                floDiscriminante /= 2 * this.floCoeficienteX;
+								floResultadoSumando = - this.floCoeficienteY / (2 * this.floCoeficienteX);
+								floResultadoRestando = - this.floCoeficienteY / (2 * this.floCoeficienteX);
+								Console.Write(String.Format("\t Los resultados son: {0:G3}-{2:G3}*i y {1:G3}+{2:G3}*i \n", floResultadoRestando, floResultadoSumando, floDiscriminante));
+								Console.Write("\nPulse intro para volver al menú principal");
+								strFinalOperacion = Console.ReadLine();
+								Console.Clear();
+						} else {
+								floDiscriminante = Convert.ToSingle(Math.Sqrt(floControlImaginario));
+								floResultadoSumando = (- this.floCoeficienteY + floDiscriminante) / (2 * this.floCoeficienteX);
+								floResultadoRestando = (- this.floCoeficienteY - floDiscriminante) / (2 * this.floCoeficienteX);
+								Console.Write(String.Format("\t Los resultados son {0:G3} y {1:G3} \n", floResultadoRestando, floResultadoSumando));
+								Console.Write("\nPulse intro para volver al menú principal");
+								strFinalOperacion = Console.ReadLine();
+								Console.Clear();
+						}
+				}
 				#endregion
     }
 }
