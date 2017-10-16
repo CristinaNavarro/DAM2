@@ -132,14 +132,14 @@ namespace PracticaInicial {
         }
 		#region MétodosComprobación
 
-				public static void ImprimirAlerta(string alerta) { 
+				static void ImprimirAlerta(string alerta) { 
 						Console.Clear();
 						Console.BackgroundColor = ConsoleColor.Red;
 						Console.WriteLine(alerta +" \n");
 						Console.ResetColor();
 				}
 
-        public static bool EsNumeroValido(string strNumero, string strTipo) {
+        static bool EsNumeroValido(string strNumero, string strTipo) {
             bool valido = true;
             try {
                 if(strTipo.Equals("Single")) {
@@ -157,7 +157,7 @@ namespace PracticaInicial {
             }
             return valido;
         }
-        public static bool EsNumeroValido(string strNumero, string strTipo, string enunciadoAnterior) {
+        static bool EsNumeroValido(string strNumero, string strTipo, string enunciadoAnterior) {
             bool valido = true;
             try {
                 if(strTipo=="Single") {

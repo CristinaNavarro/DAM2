@@ -62,7 +62,7 @@ namespace PracticaInicial {
             Console.Clear();
         }
 
-        public ushort imprimirOperaciones(ushort usValorMinimo, ushort usValorMaximo) {
+        ushort imprimirOperaciones(ushort usValorMinimo, ushort usValorMaximo) {
 				    ulong ulResultado;
             for(ushort i = usValorMinimo; i <= usValorMaximo; i++) {
                     ulResultado = (ulong) usFactor * i;
