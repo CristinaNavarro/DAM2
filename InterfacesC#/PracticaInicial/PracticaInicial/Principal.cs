@@ -140,6 +140,7 @@ namespace PracticaInicial {
 				}
 
         public static bool EsNumeroValido(string strNumero, string strTipo) {
+            bool valido = true;
             try {
                 if(strTipo.Equals("Single")) {
                   float floComprobar = Convert.ToSingle(strNumero);
@@ -149,14 +150,15 @@ namespace PracticaInicial {
 
             } catch(OverflowException) {
 							  ImprimirAlerta("ALERTA: Acaba de introducir un número que no es correcto.");
-					      return false;
+					      valido = false;
             } catch(FormatException) {
 							  ImprimirAlerta("ALERTA: Acaba de introducir unos caracteres no numéricos.");
-					      return false;
+					      valido = false;
             }
-            return true;
+            return valido;
         }
         public static bool EsNumeroValido(string strNumero, string strTipo, string enunciadoAnterior) {
+            bool valido = true;
             try {
                 if(strTipo=="Single") {
                   float floComprobar = Convert.ToSingle(strNumero);
@@ -166,13 +168,13 @@ namespace PracticaInicial {
             } catch(OverflowException) {
 							  ImprimirAlerta("ALERTA: Acaba de introducir un número que no es correcto.");
                 Console.Write(enunciadoAnterior);
-					      return false;
+					      valido = false;
             } catch(FormatException) {
 							  ImprimirAlerta("ALERTA: Acaba de introducir unos caracteres no numéricos.");
                 Console.Write(enunciadoAnterior);
-					      return false;
+					      valido = false;
             }
-            return true;
+            return valido;
         }
         #endregion
     }
