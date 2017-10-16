@@ -46,8 +46,8 @@ namespace PracticaInicial{
                 floDiscriminante /= 2 * this.floCoeficienteX;
 								floResultadoSumando = - this.floCoeficienteY / (2 * this.floCoeficienteX);
 								floResultadoRestando = - this.floCoeficienteY / (2 * this.floCoeficienteX);
-								Console.Write(String.Format("\t Los resultados son: {0:G3}-{2:G3}*i y {1:G3}+{2:G3}*i \n", floResultadoRestando, floResultadoSumando, floDiscriminante));
-								Console.Write("\nPulse intro para volver al menú principal");
+								Console.Write(String.Format("\n \t Los resultados son: {0:G3}-{2:G3}*i y {1:G3}+{2:G3}*i \n", floResultadoRestando, floResultadoSumando, floDiscriminante));
+								Console.Write("\nPulse la tecla Intro para volver al menú principal");
 								strFinalOperacion = Console.ReadLine();
 								Console.Clear();
 						} else {
@@ -55,7 +55,7 @@ namespace PracticaInicial{
 								floResultadoSumando = (- this.floCoeficienteY + floDiscriminante) / (2 * this.floCoeficienteX);
 								floResultadoRestando = (- this.floCoeficienteY - floDiscriminante) / (2 * this.floCoeficienteX);
 								Console.Write(String.Format("\t Los resultados son {0:G3} y {1:G3} \n", floResultadoRestando, floResultadoSumando));
-								Console.Write("\nPulse intro para volver al menú principal");
+								Console.Write("\nPulse la tecla Intro para volver al menú principal");
 								strFinalOperacion = Console.ReadLine();
 								Console.Clear();
 						}

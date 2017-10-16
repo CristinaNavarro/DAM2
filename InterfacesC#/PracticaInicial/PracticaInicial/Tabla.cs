@@ -47,7 +47,7 @@ namespace PracticaInicial {
                 }
 
                 floUltimoElemento = imprimirOperaciones(floUltimoElemento, (ushort) (j * 10));
-                Console.Write("\nPulse intro para pasar a la siguiente página.");
+                Console.Write("\nPulse la tecla Intro para pasar a la siguiente página.");
                 strFinalOperacion = Console.ReadLine();
                 Console.Clear();
             }
@@ -57,7 +57,7 @@ namespace PracticaInicial {
                 floUltimoElemento = imprimirOperaciones(floUltimoElemento, (ushort) (floUltimoElemento + floUltimaPagina - 1));
             }
 
-            Console.Write("\nFin de las páginas. Pulse intro para volver al menú principal.");
+            Console.Write("\nFin de las páginas. Pulse la tecla Intro para volver al menú principal.");
             strFinalOperacion = Console.ReadLine();
             Console.Clear();
         }

@@ -36,7 +36,7 @@ namespace PracticaInicial {
                 do {
 										Console.Write("Seleccione una opción: \n \n \t 1. Ecuación \n \t 2. Tabla \n \t 3. Salir \n \n \t ->");
                     strCadena = Console.ReadLine();
-                    boolValido = esNumeroValido(strCadena, "UInt16");
+                    boolValido = EsNumeroValido(strCadena, "UInt16");
                     if(boolValido) {
                         usModoSeleccionado = Convert.ToUInt16(strCadena);
                     } else {
@@ -45,7 +45,6 @@ namespace PracticaInicial {
                 } while(!boolValido || (usModoSeleccionado > 4 && usModoSeleccionado < 0));
 
 								switch(usModoSeleccionado) {
-
 										case 1:
 												Console.Clear();
 												Console.Write("Ecuación de segundo grado: \n \n");
@@ -53,18 +52,22 @@ namespace PracticaInicial {
                         do {
                             Console.Write("\t Introduzca el primer parámetro \n \t ->");
                             strCadena = Console.ReadLine();
-                            boolValido = esNumeroValido(strCadena,"Single","Ecuación de segundo grado: \n \n");
+                            boolValido = EsNumeroValido(strCadena,"Single","Ecuación de segundo grado: \n \n");
                             if(boolValido) {
                               floCoeficienteX = Convert.ToSingle(strCadena);
                             } else {
                                 strCadena = "";
                             }
-                        } while(!boolValido);
+                            if(floCoeficienteX == 0) {
+                                ImprimirAlerta("ALERTA: El primer parámetro de una ecuación de segundo grado no puede ser 0.");
+                                Console.Write("Ecuación de segundo grado: \n \n");
+                            }
+                        } while(!boolValido || floCoeficienteX == 0);
 
                         do {
                         Console.Write("\t Introduzca el segundo parámetro \n \t ->");
 												strCadena = Console.ReadLine();
-                        boolValido = esNumeroValido(strCadena,"Single","Ecuación de segundo grado: \n \n\t El primer parámetro es " +floCoeficienteX +"\n");
+                        boolValido = EsNumeroValido(strCadena,"Single","Ecuación de segundo grado: \n \n\t El primer parámetro es " +floCoeficienteX +"\n");
                             if(boolValido) {
                               floCoeficienteY = Convert.ToSingle(strCadena);
                             } else {
@@ -75,7 +78,7 @@ namespace PracticaInicial {
                         do {
                         Console.Write("\t Introduzca el tercer parámetro \n \t ->");
                         strCadena = Console.ReadLine();
-                        boolValido = esNumeroValido(strCadena,"Single","Ecuación de segundo grado: \n \n\t El primer parámetro es " +floCoeficienteX +" y el segundo es " +floCoeficienteY +"\n");
+                        boolValido = EsNumeroValido(strCadena,"Single","Ecuación de segundo grado: \n \n\t El primer parámetro es " +floCoeficienteX +" y el segundo es " +floCoeficienteY +"\n");
                             if(boolValido) { 
                               floCoeficienteZ = Convert.ToSingle(strCadena);
                             } else {
@@ -94,7 +97,7 @@ namespace PracticaInicial {
                         do {
 												    Console.Write("\t Introduce el factor: \n \t ->");
                             strCadena = Console.ReadLine();
-                            boolValido = esNumeroValido(strCadena,"UInt16","Tabla de multiplicar: \n \n");
+                            boolValido = EsNumeroValido(strCadena,"UInt16","Tabla de multiplicar: \n \n");
                             if(boolValido) {
                                 usFactor = Convert.ToUInt16(strCadena);
                             } else {
@@ -105,7 +108,7 @@ namespace PracticaInicial {
                         do {
 												    Console.Write("\t Introduce el número de elementos: \n \t ->");
                             strCadena = Console.ReadLine();
-                            boolValido = esNumeroValido(strCadena,"UInt16","Tabla de multiplicar: \n \n \t El factor es: " +usFactor +"\n");
+                            boolValido = EsNumeroValido(strCadena,"UInt16","Tabla de multiplicar: \n \n \t El factor es: " +usFactor +"\n");
                             if(boolValido) {
                                 usNumeroElementos = Convert.ToUInt16(strCadena);
                             } else {
@@ -136,7 +139,7 @@ namespace PracticaInicial {
 						Console.ResetColor();
 				}
 
-        public static bool esNumeroValido(string strNumero, string strTipo) {
+        public static bool EsNumeroValido(string strNumero, string strTipo) {
             try {
                 if(strTipo.Equals("Single")) {
                   float floComprobar = Convert.ToSingle(strNumero);
@@ -153,7 +156,7 @@ namespace PracticaInicial {
             }
             return true;
         }
-        public static bool esNumeroValido(string strNumero, string strTipo, string enunciadoAnterior) {
+        public static bool EsNumeroValido(string strNumero, string strTipo, string enunciadoAnterior) {
             try {
                 if(strTipo=="Single") {
                   float floComprobar = Convert.ToSingle(strNumero);
