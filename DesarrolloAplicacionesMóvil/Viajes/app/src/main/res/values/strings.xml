@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Viajes</string>
+    <string name="tvTransporte">Transporte</string>
+    <string name="rbAutobus">Autobus - 100</string>
+    <string name="rbAvion">Avion - 800</string>
+    <string name="rbTren">Tren - 150</string>
+    <string name="rbPropio">Propio - 50</string>
+    <string name="tvPersonas">Personas</string>
+    <string name="etPersonas">1</string>
+    <string name="etPersonasHint">Introduce el número de personas</string>
+    <string name="tvHotel">Hotel</string>
+    <string name="rbIbis">Ibis - 500</string>
+    <string name="rbHilton">Hilton - 300</string>
+    <string name="rbMalaga">Malaga Palacio - 200</string>
+    <string name="tvComida">Comida</string>
+    <string name="rbCompleta">Completa - 200 </string>
+    <string name="rbMedia">Media - 100</string>
+    <string name="rbDesayuno">Desayuno - 50</string>
+    <string name="tvOcio">Ocio</string>
+    <string name="rbCultural">Cultural - 200</string>
+    <string name="rbFiestas">Fiestas - 100</string>
+    <string name="rbLibro">Libro - 50</string>
+    <string name="tvPrecio">Precio</string>
+    <string name="tvMostrarPrecio">0</string>
+    <string name="bNuevaActividad">Nueva actividad</string>
+</resources>
