@@ -21,21 +21,19 @@ public class Main {
         int codigo = sc.nextInt();
         DataInputStream dIn = new DataInputStream(new FileInputStream("C:\\Users\\Cristi\\Desktop\\A\\Departamentos.dat"));
         try {
-            while(true){
-                if(codigo==dIn.readInt()){
+            while (true) {
+                if (codigo == dIn.readInt()) {
                     existe = true;
-                    System.out.println(codigo +" " +dIn.readUTF() +" " +dIn.readInt());
-                }else{
+                    System.out.println(codigo + " " + dIn.readUTF() + " " + dIn.readInt());
+                } else {
                     dIn.readUTF();
                     dIn.readInt();
                 }
 
             }
-
-
-        }catch (EOFException e){
+        } catch (EOFException e) {
             dIn.close();
-            if(!existe){
+            if (!existe) {
                 System.out.println("No existe ese empleado");
             }
         }
