@@ -29,7 +29,6 @@ public class Main {
                     dIn.readUTF();
                     dIn.readInt();
                 }
-
             }
         } catch (EOFException e) {
             dIn.close();
