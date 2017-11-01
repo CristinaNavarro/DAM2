@@ -18,11 +18,11 @@ public class Main {
     public static void main(String[] args) throws IOException {
         Scanner sc = new Scanner(System.in);
 
-        //Creacion de archivos
+        //Creación de archivos
         File f = new File("C:\\Users\\Cristi\\Desktop\\A\\Departamentos.dat");
         File modificado = new File("C:\\Users\\Cristi\\Desktop\\A\\Departamentos.temp.dat");
 
-        //Creacion de IO
+        //Creación de IO
         DataInputStream dIn = new DataInputStream(new FileInputStream(f));
         DataOutputStream dOut = new DataOutputStream(new FileOutputStream(modificado));
         DataInputStream dInMod = new DataInputStream(new FileInputStream(modificado));
@@ -31,7 +31,7 @@ public class Main {
         int contDepartamentos = 0;
 
         try {
-            System.out.println("Introduce el numero del departamento a eliminar: ");
+            System.out.println("Introduce el número del departamento a eliminar: ");
             int n = sc.nextInt();
             int actual;
             //mientras que queden datos en el archivo, se buscara el que coincida con el numero introducido y se borrara
@@ -42,7 +42,7 @@ public class Main {
                     dOut.writeInt(actual);
                     dOut.writeUTF(dIn.readUTF());
                     dOut.writeUTF(dIn.readUTF());
-                    System.out.println("Linea escrita en el nuevo documento: " + dInMod.readInt() + dInMod.readUTF()
+                    System.out.println("Línea escrita en el nuevo documento: " + dInMod.readInt() + dInMod.readUTF()
                             + dInMod.readUTF());
                 } else {
                     dIn.readUTF();
