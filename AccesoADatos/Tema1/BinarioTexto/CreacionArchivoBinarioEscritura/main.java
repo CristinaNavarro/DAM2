@@ -19,8 +19,6 @@ public class main {
         File fichero = new File("C:\\Users\\Cristi\\Desktop\\A\\Empleados.dat");
         DataOutputStream fOut = new DataOutputStream(new FileOutputStream(fichero));
         int[] numDepartamento = {1,2,3};
-        /*String[] departamentos = {"RRHH","Ventas","Marketing"};
-        String[] localidad = {"Malaga","Madrid","Malaga"};*/
         String[] apellidos = {"Navarro","Soto","Alcaraz"};
         int[] sueldo = {2000,1500,1700};
         for(int i=0;i<numDepartamento.length;i++){
