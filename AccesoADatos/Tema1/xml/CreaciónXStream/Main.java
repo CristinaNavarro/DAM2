@@ -1,5 +1,11 @@
-//⦁	A partir de los datos del fichero Departamentos.dat creado en ejercicios anteriores, crear un fichero XML usando XStream.
-
+/*
+********Autor: Cristina Navarro
+********Fecha: 01/11/2017
+********Asignatura:AccesoADatos
+********Ejercicio:	A partir de los datos del fichero
+******** Departamentos.dat creado en ejercicios anteriores,
+******** crear un fichero XML usando XStream.
+*/
 import java.io.*;
 
 import com.thoughtworks.xstream.XStream;
