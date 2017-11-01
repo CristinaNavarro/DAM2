@@ -1,3 +1,11 @@
+/*
+********Autor: Cristina Navarro
+********Fecha: 28/10/2017
+********Asignatura:AccesoADatos
+********Ejercicio:	Lectura y escritura de
+********  objeto en archivo .xml
+*/
+
 import org.w3c.dom.DOMImplementation;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
