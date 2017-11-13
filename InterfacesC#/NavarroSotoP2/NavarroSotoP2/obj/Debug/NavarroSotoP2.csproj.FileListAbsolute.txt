@@ -1,0 +1,7 @@
+C:\Users\Cristi\source\repos\NavarroSotoP2\NavarroSotoP2\bin\Debug\NavarroSotoP2.exe.config
+C:\Users\Cristi\source\repos\NavarroSotoP2\NavarroSotoP2\bin\Debug\NavarroSotoP2.exe
+C:\Users\Cristi\source\repos\NavarroSotoP2\NavarroSotoP2\bin\Debug\NavarroSotoP2.pdb
+C:\Users\Cristi\source\repos\NavarroSotoP2\NavarroSotoP2\obj\Debug\NavarroSotoP2.csprojResolveAssemblyReference.cache
+C:\Users\Cristi\source\repos\NavarroSotoP2\NavarroSotoP2\obj\Debug\NavarroSotoP2.csproj.CoreCompileInputs.cache
+C:\Users\Cristi\source\repos\NavarroSotoP2\NavarroSotoP2\obj\Debug\NavarroSotoP2.exe
+C:\Users\Cristi\source\repos\NavarroSotoP2\NavarroSotoP2\obj\Debug\NavarroSotoP2.pdb
