@@ -1,0 +1,7 @@
+c:\users\cristi\source\repos\NavarroSotoP3\NavarroSotoP3\obj\Debug\NavarroSotoP3.csprojResolveAssemblyReference.cache
+c:\users\cristi\source\repos\NavarroSotoP3\NavarroSotoP3\obj\Debug\NavarroSotoP3.csproj.CoreCompileInputs.cache
+c:\users\cristi\source\repos\NavarroSotoP3\NavarroSotoP3\bin\Debug\NavarroSotoP3.exe.config
+c:\users\cristi\source\repos\NavarroSotoP3\NavarroSotoP3\bin\Debug\NavarroSotoP3.exe
+c:\users\cristi\source\repos\NavarroSotoP3\NavarroSotoP3\bin\Debug\NavarroSotoP3.pdb
+c:\users\cristi\source\repos\NavarroSotoP3\NavarroSotoP3\obj\Debug\NavarroSotoP3.exe
+c:\users\cristi\source\repos\NavarroSotoP3\NavarroSotoP3\obj\Debug\NavarroSotoP3.pdb
