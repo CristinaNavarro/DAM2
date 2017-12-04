@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    tools:context="com.example.cristi.primitiva.ManualActivity">
+
+    <LinearLayout
+        android:layout_width="344dp"
+        android:layout_height="495dp"
+        android:orientation="vertical"
+        android:weightSum="1"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <RadioGroup
+            android:id="@+id/rgModoManual"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rbValorFijo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="@string/radioValorFijo" />
+
+            <RadioButton
+                android:id="@+id/rbManual"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/radioValorManual" />
+
+        </RadioGroup>
+
+        <LinearLayout
+            android:id="@+id/linValorFijo"
+            android:layout_width="wrap_content"
+            android:layout_height="69dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/etNumeroManual"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <Button
+                android:id="@+id/bSeleccionarManual"
+                android:layout_width="114dp"
+                android:layout_height="wrap_content"
+                android:background="@color/MarronClaro"
+                android:text="@string/bSeleccionarManual" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linApuestasManual"
+            android:layout_width="match_parent"
+            android:layout_height="243dp"
+            android:layout_weight="0.89"
+            android:background="@drawable/textviewdesign"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bEnviar"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@color/MarronClaro"
+            android:text="@string/bEnviar" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
