@@ -1,0 +1,10 @@
+C:\Users\Cristi\source\repos\NavarroSotoP8\NavarroSotoP8\bin\Debug\NavarroSotoP8.exe.config
+C:\Users\Cristi\source\repos\NavarroSotoP8\NavarroSotoP8\bin\Debug\NavarroSotoP8.exe
+C:\Users\Cristi\source\repos\NavarroSotoP8\NavarroSotoP8\bin\Debug\NavarroSotoP8.pdb
+C:\Users\Cristi\source\repos\NavarroSotoP8\NavarroSotoP8\obj\Debug\NavarroSotoP8.csprojResolveAssemblyReference.cache
+C:\Users\Cristi\source\repos\NavarroSotoP8\NavarroSotoP8\obj\Debug\NavarroSotoP8.Properties.Resources.resources
+C:\Users\Cristi\source\repos\NavarroSotoP8\NavarroSotoP8\obj\Debug\NavarroSotoP8.csproj.GenerateResource.Cache
+C:\Users\Cristi\source\repos\NavarroSotoP8\NavarroSotoP8\obj\Debug\NavarroSotoP8.csproj.CoreCompileInputs.cache
+C:\Users\Cristi\source\repos\NavarroSotoP8\NavarroSotoP8\obj\Debug\NavarroSotoP8.exe
+C:\Users\Cristi\source\repos\NavarroSotoP8\NavarroSotoP8\obj\Debug\NavarroSotoP8.pdb
+C:\Users\Cristi\source\repos\NavarroSotoP8\NavarroSotoP8\obj\Debug\NavarroSotoP8.VentanaPrincipal.resources

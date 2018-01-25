@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo3"
+    tools:context="com.example.cristi.noriaejercicio17final.ActClientesNoria">
+
+
+    <LinearLayout
+        android:id="@+id/linearClientes"
+        android:layout_width="346dp"
+        android:layout_height="487dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="6dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="316dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/fondotextview"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textColor="@color/azulOscuro"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="234dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/fondoadaptador"
+            android:gravity="center"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="67dp"
+            android:orientation="horizontal">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:textColorHint="@color/azulClaro"
+                android:theme="@style/Theme.Design.Light">
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:hint="@string/etNombre"
+                    android:selectAllOnFocus="false"
+                    android:shadowColor="@color/azulClaro"
+                    android:singleLine="false"
+                    android:textColor="@color/azulClaro"
+                    android:textColorHighlight="@color/azulClaro"
+                    android:textColorHint="@color/azulClaro"
+                    android:textColorLink="@color/azulClaro"
+                    android:textStyle="bold" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/bInsertar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@color/azulOscuro"
+                android:padding="10dp"
+                android:text="@string/bInsertar"
+                android:textColor="@color/azulClaro" />
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/listClientes"
+            android:layout_width="match_parent"
+            android:layout_height="278dp"
+            android:layout_weight="0.10"
+            android:background="@drawable/fondoadaptador" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="0.09"
+            android:background="@drawable/fondoadaptador"
+            android:gravity="end"
+            android:text="@string/plazasOcupadas"
+            android:textAlignment="textEnd"
+            android:textColor="@color/azulOscuro" />
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

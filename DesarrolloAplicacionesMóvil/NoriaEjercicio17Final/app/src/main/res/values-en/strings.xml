@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Noriarty</string>
+    <string name="bControlCaja">Income</string>
+    <string name="bInsertar">Introduce</string>
+    <string name="bReinicio">New day</string>
+    <string name="etNombre">Name</string>
+    <string name="tvNombre">Noriarty</string>
+    <string name="datosBorrados">Data deleted</string>
+    <string name="plazasOcupadas">Number of seats occupied</string>
+    <string name="plazasCompletas">The 10 seats of this trip are already complete</string>
+    <string name="nombreRepetido">The name you have entered exists in the list or you have introduced a not valid name</string>
+    <string name="cargandoInformacion">Loading data</string>
+    <string name="totalPersonas">People who have bought a trip today</string>
+    <string name="tvSeleccionNoria">Choose ferris wheel</string>
+    <string name="tvSeleccionViaje">Choose trip</string>
+    <string name="bMostrarDatos">Show</string>
+    <string name="busquedaClientes">have been bought</string>
+    <string name="busquedaConcreta">Introduce a ferris wheel and a trip which has sold seats.</string>
+    <string name="busquedaNoria">Of the ferris wheel</string>
+    <string name="busquedaViaje">of the trip</string>
+    <string name="plazas">seats.</string>
+    <string name="tvPorViaje">People per trip</string>
+    <string name="noria">ferry wheel</string>
+    <string name="viaje">trip</string>
+    <string name="noria1">Fun Ferry Wheel</string>
+    <string name="noria2">Happy Ferry Wheel</string>
+    <string name="noria3">Magic Ferry Wheel</string>
+    <string name="confirmacion">Confirmation</string>
+    <string name="borrar">All data will be deleted, are you sure?</string>
+    <string name="confirmar">Confirm</string>
+    <string name="datosNoBorrados">Data has not been deleted</string>
+    <string name="cancelar">Cancel</string>
+</resources>

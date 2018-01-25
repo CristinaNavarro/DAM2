@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Noriarty</string>
+    <string name="tvNombre">Noriarty</string>
+    <string name="bControlCaja">Control Caja</string>
+    <string name="bReinicio">Nuevo día</string>
+    <string name="etNombre">Nombre</string>
+    <string name="bInsertar">Insertar</string>
+    <string name="datosBorrados">Datos borrados</string>
+    <string name="plazasOcupadas">Número de plazas ocupadas</string>
+    <string name="plazasCompletas">Las 10 plazas de este viaje ya están completas</string>
+    <string name="nombreRepetido">El nombre que ha insertado ya se encuentra en la lista o ha insertado un nombre no válido</string>
+    <string name="cargandoInformacion">Cargando información</string>
+    <string name="totalPersonas">Total de personas que han comprado un viaje hoy</string>
+    <string name="tvSeleccionNoria">Selecciona la noria</string>
+    <string name="tvSeleccionViaje">Selecciona el viaje</string>
+    <string name="bMostrarDatos">Ver</string>
+    <string name="busquedaNoria">De la noria</string>
+    <string name="busquedaViaje">del viaje</string>
+    <string name="busquedaClientes">se han comprado</string>
+    <string name="tvPorViaje">Personas por viaje</string>
+    <string name="plazas">plazas.</string>
+    <string name="busquedaConcreta">Introduzca una noria y un viaje donde existan plazas compraadas.</string>
+    <string name="noria">noria</string>
+    <string name="viaje">viaje</string>
+    <string name="noria1">Noria Divertida</string>
+    <string name="noria2">Noria Feliz</string>
+    <string name="noria3">Noria Mágica</string>
+    <string name="confirmacion">Confirmación</string>
+    <string name="borrar">Se borrarán todos los datos almacenados, ¿está seguro?</string>
+    <string name="confirmar">Confirmar</string>
+    <string name="datosNoBorrados">No se han borrado los datos</string>
+    <string name="cancelar">Cancelar</string>
+
+
+</resources>

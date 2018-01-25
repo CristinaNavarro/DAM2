@@ -1,0 +1,11 @@
+C:\Users\Cristi\source\repos\NavarroSotoP9\NavarroSotoP9\bin\Debug\NavarroSotoP9.exe.config
+C:\Users\Cristi\source\repos\NavarroSotoP9\NavarroSotoP9\bin\Debug\NavarroSotoP9.exe
+C:\Users\Cristi\source\repos\NavarroSotoP9\NavarroSotoP9\bin\Debug\NavarroSotoP9.pdb
+C:\Users\Cristi\source\repos\NavarroSotoP9\NavarroSotoP9\obj\Debug\NavarroSotoP9.csprojResolveAssemblyReference.cache
+C:\Users\Cristi\source\repos\NavarroSotoP9\NavarroSotoP9\obj\Debug\NavarroSotoP9.Properties.Resources.resources
+C:\Users\Cristi\source\repos\NavarroSotoP9\NavarroSotoP9\obj\Debug\NavarroSotoP9.csproj.GenerateResource.Cache
+C:\Users\Cristi\source\repos\NavarroSotoP9\NavarroSotoP9\obj\Debug\NavarroSotoP9.csproj.CoreCompileInputs.cache
+C:\Users\Cristi\source\repos\NavarroSotoP9\NavarroSotoP9\obj\Debug\NavarroSotoP9.exe
+C:\Users\Cristi\source\repos\NavarroSotoP9\NavarroSotoP9\obj\Debug\NavarroSotoP9.pdb
+C:\Users\Cristi\source\repos\NavarroSotoP9\NavarroSotoP9\obj\Debug\NavarroSotoP9.gestionGrupos.resources
+C:\Users\Cristi\source\repos\NavarroSotoP9\NavarroSotoP9\obj\Debug\NavarroSotoP9.formNuevoGrupo.resources

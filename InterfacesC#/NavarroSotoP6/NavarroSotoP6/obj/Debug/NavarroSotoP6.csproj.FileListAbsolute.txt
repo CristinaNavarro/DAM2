@@ -1,0 +1,10 @@
+C:\Users\Cristi\source\repos\NavarroSotoP6\NavarroSotoP6\bin\Debug\NavarroSotoP6.exe.config
+C:\Users\Cristi\source\repos\NavarroSotoP6\NavarroSotoP6\bin\Debug\NavarroSotoP6.exe
+C:\Users\Cristi\source\repos\NavarroSotoP6\NavarroSotoP6\bin\Debug\NavarroSotoP6.pdb
+C:\Users\Cristi\source\repos\NavarroSotoP6\NavarroSotoP6\obj\Debug\NavarroSotoP6.csprojResolveAssemblyReference.cache
+C:\Users\Cristi\source\repos\NavarroSotoP6\NavarroSotoP6\obj\Debug\NavarroSotoP6.Properties.Resources.resources
+C:\Users\Cristi\source\repos\NavarroSotoP6\NavarroSotoP6\obj\Debug\NavarroSotoP6.csproj.GenerateResource.Cache
+C:\Users\Cristi\source\repos\NavarroSotoP6\NavarroSotoP6\obj\Debug\NavarroSotoP6.csproj.CoreCompileInputs.cache
+C:\Users\Cristi\source\repos\NavarroSotoP6\NavarroSotoP6\obj\Debug\NavarroSotoP6.exe
+C:\Users\Cristi\source\repos\NavarroSotoP6\NavarroSotoP6\obj\Debug\NavarroSotoP6.pdb
+C:\Users\Cristi\source\repos\NavarroSotoP6\NavarroSotoP6\obj\Debug\NavarroSotoP6.formNomina.resources

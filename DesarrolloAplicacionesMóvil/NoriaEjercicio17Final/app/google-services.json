@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "572575760736",
+    "firebase_url": "https://noriaejercicio17final.firebaseio.com",
+    "project_id": "noriaejercicio17final",
+    "storage_bucket": "noriaejercicio17final.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:572575760736:android:bcc9f93dbc948f5f",
+        "android_client_info": {
+          "package_name": "com.example.cristi.noriaejercicio17final"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "572575760736-k1g1g14120m8df2hq75f3pivafg6d6um.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.cristi.noriaejercicio17final",
+            "certificate_hash": "93dd76899c9512b86edb3be2dfbabd159d4ecd4a"
+          }
+        },
+        {
+          "client_id": "572575760736-8l149bdic4mori2ipjbij734bv4ijd65.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPg2LeNPNbgdMuCcx0NMAGS2XOYQRMbMY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "572575760736-8l149bdic4mori2ipjbij734bv4ijd65.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

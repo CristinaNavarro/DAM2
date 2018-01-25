@@ -1,0 +1,7 @@
+C:\Users\Cristi\source\repos\NavarroSotoP5\NavarroSotoP5\obj\Debug\NavarroSotoP5.csprojResolveAssemblyReference.cache
+C:\Users\Cristi\source\repos\NavarroSotoP5\NavarroSotoP5\obj\Debug\NavarroSotoP5.csproj.CoreCompileInputs.cache
+C:\Users\Cristi\source\repos\NavarroSotoP5\NavarroSotoP5\bin\Debug\NavarroSotoP5.exe.config
+C:\Users\Cristi\source\repos\NavarroSotoP5\NavarroSotoP5\bin\Debug\NavarroSotoP5.exe
+C:\Users\Cristi\source\repos\NavarroSotoP5\NavarroSotoP5\bin\Debug\NavarroSotoP5.pdb
+C:\Users\Cristi\source\repos\NavarroSotoP5\NavarroSotoP5\obj\Debug\NavarroSotoP5.exe
+C:\Users\Cristi\source\repos\NavarroSotoP5\NavarroSotoP5\obj\Debug\NavarroSotoP5.pdb
