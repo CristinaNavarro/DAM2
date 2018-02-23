@@ -9,7 +9,9 @@ Todas las asignaturas del segundo curso de DAM
 
 ## AAA
 [![imagen](https://i.imgur.com/f6KNNY3.png)](https://i.imgur.com/f6KNNY3.png)
-<img src="https://i.imgur.com/f6KNNY3.png" style:"width:200px"/>
+{::nomarkdown}
+<img src="https://i.imgur.com/f6KNNY3.png" style:"width:200px"></img>
+{:/}
 ## BBB
 
 ## CCC
