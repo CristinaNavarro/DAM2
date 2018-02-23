@@ -8,10 +8,8 @@ Todas las asignaturas del segundo curso de DAM
 - [CCC](#ccc)
 
 ## AAA
-[![imagen](https://i.imgur.com/f6KNNY3.png)](https://i.imgur.com/f6KNNY3.png)
-{::nomarkdown}
-<img src="https://i.imgur.com/f6KNNY3.png" style:"width:200px"></img>
-{:/}
+<img src="https://i.imgur.com/f6KNNY3.png" alt="imagen1" width="200" height="200">
+
 ## BBB
 
 ## CCC
